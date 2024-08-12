@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;    
+}
+.menu{
+    width: 60px;    
+    background-color: #282727;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.menu:hover{
+    flex: 2;
+}
+.menu ul{
+    position: relative;
+    height: 95vh;
+}
+.user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.user .user-box{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.user .user-box img{
+    object-fit: cover;
+}
+.user p{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+.menu ul li a{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 7px;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.menu ul li a:hover, .active{
+    background-color: #58575755;
+}
+
+.menu ul li a p{
+    font-size: 1.3rem;
+}
+.menu ul li a i{
+    font-size: 2rem;
+}
+.content{
+    flex: 9;
+    background-color: #000000e4;
+    padding: 20px;
+}
+.content-title{
+    background-color: #2424eb;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-data{
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+.content-data .content-data-item{
+    background-color: #282727;
+    width: 200px;
+    height: 150px;
+    flex-grow: 1;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.content-data-item:hover{
+    background-color: #58575755;
+}
+.content-data-item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-data-item i{
+    font-size: 4.5rem;
+}
+table{
+    width: 100%;
+    border-spacing: 10px;
+    text-align: center;
+}
+table thead th{
+    background-color: #5353ef;
+    padding: 10px;
+    border-radius: 8px;
+}
+table tbody tr td{
+    background-color: #282727;
+    padding: 10px;
+    border-radius: 8px;
+}
+.price, .count{
+    background-color: teal;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.count{
+    background-color: orange;
+}
